@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+
   content: [
     './components/**/*.{js,vue,ts}',
     './layouts/**/*.vue',
@@ -26,6 +27,4 @@ export default {
       '3xl': ['60px', '60px'],
       '4xl': ['200px', '120%']
     }
-  },
-  plugins: []
 };
