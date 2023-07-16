@@ -1,36 +1,17 @@
 <template>
   <footer>
     <AppContainer>
-      <div class="flex justify-between">
-        <div
-          class="grid grid-cols-2 grid-rows-2 items-end gap-x-12 gap-y-8 lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-20 lg:gap-y-0"
-        >
-          <div v-for="contact in contacts" :key="contact.id" class="first:row-span-2">
-            <h4 class="mb-2 text-xs text-ui-white opacity-40 xs:text-sm">{{ contact.header }}</h4>
-            <ul>
-              <li
-                v-for="content in contact.content"
-                :key="content.id"
-                class="mb-2 max-w-[73px] text-xs text-ui-white last:mb-0 xs:text-sm"
-              >
-                <NuxtLink :to="content.link">{{ content.title }}</NuxtLink>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="self-end text-xs text-ui-white opacity-40 xs:text-sm">©{{ year }}</div>
-      </div>
+      <FooterContacts :contacts="contacts" />
     </AppContainer>
   </footer>
 </template>
 
 <script setup lang="ts">
-import { ContactBlock } from 'types/Contacts';
+import { Contacts } from 'types/Contacts';
 
 const mail = '@kontora.dev';
-const year = new Date().getFullYear();
 
-const contacts = [
+const contacts: Contacts = [
   {
     id: 1,
     header: 'Follow us',
@@ -43,17 +24,17 @@ const contacts = [
       {
         id: '2',
         title: 'Twitter',
-        link: 'twitter.com'
+        link: 'https://www.twitter.com/'
       },
       {
         id: '3',
         title: 'LinkedIn',
-        link: 'LinkedIn.com'
+        link: 'https://www.linkedin.com/'
       },
       {
         id: '4',
         title: 'Telegram',
-        link: 'Telegram.com'
+        link: 'https://www.telegram.com/'
       }
     ]
   },
@@ -79,5 +60,5 @@ const contacts = [
       }
     ]
   }
-] as ContactBlock;
+];
 </script>

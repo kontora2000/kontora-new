@@ -34,7 +34,6 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
-      bodyAttrs: { class: 'bg-ui-black' },
       title: 'Kontora',
       meta: [
         { charset: 'utf-8' },

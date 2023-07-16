@@ -1,13 +1,13 @@
 <template>
-  <AppContainer>
-    <header>
+  <header>
+    <AppContainer>
       <div
         class="relative mt-[73px] h-[45px] w-[77px] text-sm text-ui-white before:absolute before:left-[-8px] before:top-[-7px] before:content-[url('/ellipse.svg')]"
       >
         Kontora
       </div>
-    </header></AppContainer
-  >
+    </AppContainer>
+  </header>
 </template>
 
 <script setup lang="ts"></script>

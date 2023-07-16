@@ -10,4 +10,4 @@ export interface Contact {
   content: Array<Link>;
 }
 
-export type ContactBlock = Contact[];
+export type Contacts = Contact[];
