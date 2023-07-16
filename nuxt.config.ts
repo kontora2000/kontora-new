@@ -6,7 +6,19 @@ export default defineNuxtConfig({
     port: 3003
   },
 
+  tailwindcss: {
+    cssPath: '~/assets/css/index.css',
+    configPath: 'tailwind.config',
+    exposeConfig: false,
+    exposeLevel: 2,
+    config: {},
+    injectPosition: 'first',
+    viewer: true
+  },
+
   ssr: false,
+
+  srcDir: './src/',
 
   postcss: {
     plugins: {
@@ -15,9 +27,9 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ['~/src/assets/css/index.css'],
+  css: ['~/assets/css/index.css'],
 
-  modules: ['@nuxtjs/eslint-module'],
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
 
   app: {
     head: {
