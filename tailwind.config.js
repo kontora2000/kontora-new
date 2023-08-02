@@ -6,7 +6,8 @@ export default {
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
-    './app.vue'
+    './app.vue',
+    './public'
   ],
   theme: {
     extend: {
@@ -24,11 +25,13 @@ export default {
       xs: ['14px', '133%'],
       sm: ['18px', '133%'],
       base: ['20px', '24px'],
+      md: ['24px', '36px'],
       lg: ['27px', '27px'],
       xl: ['32px', '32px'],
       '2xl': ['48px', '48px'],
       '3xl': ['60px', '60px'],
-      '4xl': ['200px', '120%']
+      '4xl': ['100px', '61px'],
+      '5xl': ['200px', '132px']
     },
     screens: {
       xs: '360px',

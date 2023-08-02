@@ -1,5 +1,8 @@
 <template>
-  <div class="h-screen w-screen bg-ui-black"></div>
+  <div>
+    <SectionsHeroSection />
+    <SectionsCaseSection />
+  </div>
 </template>
 
 <script setup lang="ts"></script>
