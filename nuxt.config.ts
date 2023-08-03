@@ -1,10 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   devServer: {
     port: 3003
   },
+
+  spaLoadingTemplate: false,
 
   tailwindcss: {
     cssPath: '~/assets/css/index.css',
@@ -29,7 +31,7 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/index.css'],
 
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', 'nuxt-icon'],
 
   app: {
     head: {

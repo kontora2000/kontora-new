@@ -1,8 +1,8 @@
 <template>
   <header>
-    <AppContainer>
+    <AppContainer variant="header">
       <div
-        class="relative mt-[73px] h-[45px] w-[77px] text-sm text-ui-white before:absolute before:left-[-8px] before:top-[-7px] before:content-[url('/ellipse.svg')]"
+        class="fixed mt-[73px] h-[45px] w-[77px] text-sm text-ui-white mix-blend-difference before:absolute before:left-[-8px] before:top-[-7px] before:content-[url('/ellipse.svg')] lg:fixed"
       >
         Kontora
       </div>

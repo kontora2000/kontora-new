@@ -9,7 +9,7 @@
           <li
             v-for="content in contact.content"
             :key="content.id"
-            class="mb-2 max-w-[73px] text-xs text-ui-white last:mb-0 xs:text-sm lg:max-w-none"
+            class="mb-2 max-w-[73px] text-xs text-ui-white last:mb-0 hover:text-ui-purple xs:text-sm lg:max-w-none"
           >
             <NuxtLink :to="content.link">{{ content.title }}</NuxtLink>
           </li>
@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Contacts } from 'types/Contacts';
+import type { Contacts } from 'types/Contacts';
 
 const year = new Date().getFullYear();
 

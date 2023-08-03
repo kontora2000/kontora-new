@@ -1,6 +1,6 @@
 <template>
-  <footer>
-    <AppContainer>
+  <footer class="mb-8">
+    <AppContainer variant="footer">
       <FooterContacts :contacts="contacts" />
     </AppContainer>
   </footer>
