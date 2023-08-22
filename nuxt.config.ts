@@ -44,8 +44,9 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
       link: [
-        { rel: 'icon', sizes: 'any', href: '/favicon.ico' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', sizes: 'any', href: 'https://kontora2000.github.io/kontora-new/favicon.ico' },
+        { rel: 'icon', type: 'image/png', href: 'https://kontora2000.github.io/kontora-new/favicon-16x16.png' },
+        { rel: 'icon', type: 'image/png', href: 'https://kontora2000.github.io/kontora-new/favicon-32x32.png' },
         {
           rel: 'apple-touch-icon',
           sizes: '180x180',
@@ -55,6 +56,6 @@ export default defineNuxtConfig({
     },
 
     baseURL: '/kontora-new/',
-    buildAssetsDir: 'src/public' //
+    buildAssetsDir: 'src' //
   }
 });

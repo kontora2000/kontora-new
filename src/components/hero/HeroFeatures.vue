@@ -1,16 +1,17 @@
 <template>
-  <div class="flex flex-wrap justify-between">
+  <div class="mt-[50px] flex flex-wrap justify-between mb:justify-normal mb:gap-8 lg:mt-0 xl:justify-between">
     <AppFeature
       v-for="feature in features"
       :key="feature.caption"
-      class="first:relative first:before:absolute first:before:content-[url('featurebordermobile.svg')] lg:first:before:left-[60px] lg:first:before:top-[48px] lg:first:before:scale-[2]"
+      class="first:relative first:before:absolute first:before:content-[url('featureborder2.svg')] lg:first:before:left-[60px] lg:first:before:top-[48px] lg:first:before:scale-[2]"
       :feature="feature"
     />
-    <div class="flex flex-wrap gap-2 lg:max-h-[132px] lg:max-w-[291px]">
+
+    <div class="mt-10 flex max-w-[172px] flex-wrap gap-2 sm:max-w-[400px] lg:mt-0 lg:max-h-[132px] lg:max-w-[291px]">
       <AppChip
         v-for="chip in stackChips"
         :key="chip.id"
-        class="flex items-center justify-center rounded-[18px] border-2 border-ui-white border-opacity-[32%] tracking-[-0.48px] text-ui-white lg:max-h-[60px] lg:px-6 lg:py-3 lg:text-md"
+        class="flex items-center justify-center rounded-[12px] border-2 border-ui-white border-opacity-[32%] px-[10px] py-2 tracking-[-0.48px] text-ui-white lg:max-h-[60px] lg:rounded-[18px] lg:px-6 lg:py-3 lg:text-md"
         :chip="chip"
       />
       <AppFeature class="lg:mt-3" :feature="stackFeature" />
@@ -29,17 +30,18 @@ const features: Features = [
     header: '8+',
     caption: `Years of${nbsp}experience`,
     classes: {
-      header: 'text-ui-white text-4xl italic lg:text-5xl',
+      header: 'text-ui-white text-4xl italic lg:text-4xl xl:text-5xl',
       caption:
-        'feature-caption text-ui-white text-md max-w-[153px]  lg:text-2xl lg:max-w-[305px] font-bold tracking-[-1.44px] mt-3'
+        'feature-caption text-ui-white text-base xs:text-md max-w-[153px] lg:text-2xl  lg:max-w-[305px] font-bold tracking-[-1.44px] mt-3'
     }
   },
   {
     header: '6',
     caption: 'Players in team',
     classes: {
-      header: 'text-ui-white text-4xl italic lg:text-5xl',
-      caption: 'feature-caption text-ui-white text-md  max-w-[165px] font-bold tracking-[-1.44px] mt-3 lg:text-2xl'
+      header: 'text-ui-white text-4xl  italic lg:text-4xl xl:text-5xl',
+      caption:
+        'feature-caption text-ui-white text-base xs:text-md   max-w-[165px] font-bold tracking-[-1.44px] mt-3 lg:text-2xl'
     }
   }
 ];
@@ -97,10 +99,66 @@ const stackChips: Chips = [
     }
   },
   {
-    id: 3,
+    id: 4,
     double: false,
     title: {
       top: `nodeJS`
+    },
+    classes: {
+      top: 'feature-chip'
+    },
+    accent: {
+      top: null,
+      bottom: null
+    }
+  },
+  {
+    id: 5,
+    double: false,
+    title: {
+      top: `TypeScript`
+    },
+    classes: {
+      top: 'feature-chip'
+    },
+    accent: {
+      top: null,
+      bottom: null
+    }
+  },
+  {
+    id: 6,
+    double: false,
+    title: {
+      top: `PHP`
+    },
+    classes: {
+      top: 'feature-chip'
+    },
+    accent: {
+      top: null,
+      bottom: null
+    }
+  },
+  {
+    id: 6,
+    double: false,
+    title: {
+      top: `WebGL`
+    },
+    classes: {
+      top: 'feature-chip'
+    },
+    accent: {
+      top: null,
+      bottom: null
+    }
+  },
+  {
+    id: 7,
+    double: false,
+    title: {
+      top: `three.js`
     },
     classes: {
       top: 'feature-chip'

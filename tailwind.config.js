@@ -22,6 +22,7 @@ export default {
       'ui-white': '#FFFFFF'
     },
     fontSize: {
+      xxs: ['12px', '100%'],
       xs: ['14px', '133%'],
       sm: ['18px', '133%'],
       base: ['20px', '24px'],
@@ -35,10 +36,12 @@ export default {
     },
     screens: {
       xs: '360px',
+      mb: '480px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      base: '1440px',
       '2xl': '1536px'
     }
   }

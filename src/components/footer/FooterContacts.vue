@@ -9,7 +9,7 @@
           <li
             v-for="content in contact.content"
             :key="content.id"
-            class="footer-link mb-2 max-w-[73px] text-xs text-ui-white last:mb-0 hover:text-ui-purple xs:text-sm lg:max-w-fit"
+            class="footer-link mb-2 max-w-[73px] text-xs text-ui-white last:mb-0 xs:text-sm lg:max-w-fit"
           >
             <NuxtLink :to="content.link">{{ content.title }}</NuxtLink>
           </li>

@@ -18,5 +18,14 @@ li {
 
 .footer-link {
   font-family: 'Times New Roman', Times, serif !important;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.32);
+
 }
+
+
+@media (min-width: 1024px) { 
+  
+  .footer-link {
+
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.32);
+}}
+
