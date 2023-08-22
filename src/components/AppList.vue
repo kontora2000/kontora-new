@@ -1,6 +1,6 @@
 <template>
   <div :class="classes.variant">
-    <slot v-if="withHeader" name="header"> </slot>
+    <div class="flex max-h-[24px]"><slot v-if="withHeader" name="header"></slot> <slot name="divider"> </slot></div>
     <ul>
       <li v-for="item in list" :key="item.id" :class="classes.itemClass">
         <slot

@@ -52,6 +52,9 @@ export default defineNuxtConfig({
           href: '/apple-touch-icon.png'
         }
       ]
-    }
+    },
+
+    baseURL: '/kontora-new/',
+    buildAssetsDir: 'src/public' //
   }
 });

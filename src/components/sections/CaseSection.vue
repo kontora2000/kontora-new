@@ -2,10 +2,15 @@
   <AppSection>
     <AppList class="pt-32" with-footer with-header :list="list" :classes="listClasses">
       <template #header>
-        <h1 class="mr-1 mt-1 shrink-0 text-sm text-ui-white">{{ header }}</h1>
+        <h1 class="mt-1 shrink-0 text-sm text-ui-white">{{ header }}</h1>
+      </template>
+      <template #divider>
+        <div class="ml-2 mr-0 mt-[14px] min-w-[0.8em] shrink-0 border-t border-t-ui-white"></div>
       </template>
       <template #footer>
-        <li class="text-xl tracking-tighter text-ui-white opacity-40 lg:max-w-[686px] lg:text-3xl">{{ footer }}</li>
+        <li class="text-xl font-bold tracking-[-1.8px] text-ui-white opacity-40 lg:max-w-[686px] lg:text-3xl">
+          {{ footer }}
+        </li>
       </template>
     </AppList>
   </AppSection>
@@ -14,7 +19,7 @@
 <script setup lang="ts">
 import type { List } from 'types/List';
 
-const header = 'Worked with ——';
+const header = 'Worked with';
 const footer = 'and other lesser-known companies & startups';
 
 const list: List = [

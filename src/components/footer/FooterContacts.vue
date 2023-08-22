@@ -9,14 +9,14 @@
           <li
             v-for="content in contact.content"
             :key="content.id"
-            class="mb-2 max-w-[73px] text-xs text-ui-white last:mb-0 hover:text-ui-purple xs:text-sm lg:max-w-none"
+            class="footer-link mb-2 max-w-[73px] text-xs text-ui-white last:mb-0 hover:text-ui-purple xs:text-sm lg:max-w-fit"
           >
             <NuxtLink :to="content.link">{{ content.title }}</NuxtLink>
           </li>
         </ul>
       </div>
     </div>
-    <div class="self-end text-xs text-ui-white opacity-40 xs:text-sm">©{{ year }}</div>
+    <div class="self-end text-xs text-ui-white opacity-40 xs:text-sm">©&thinsp;{{ year }}</div>
   </div>
 </template>
 

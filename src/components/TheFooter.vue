@@ -1,5 +1,5 @@
 <template>
-  <footer class="mb-8">
+  <footer class="mb-8 mt-[80px]">
     <AppContainer variant="footer">
       <FooterContacts :contacts="contacts" />
     </AppContainer>

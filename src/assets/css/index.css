@@ -14,3 +14,9 @@ html {
 li {
   font-family: Inter, sans-serif !important;
 }
+
+
+.footer-link {
+  font-family: 'Times New Roman', Times, serif !important;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.32);
+}
