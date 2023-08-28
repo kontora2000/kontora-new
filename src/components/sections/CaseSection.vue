@@ -5,7 +5,9 @@
         <h1 class="mt-1 flex-1 whitespace-nowrap text-sm text-ui-white">{{ header }}</h1>
       </template>
       <template #divider>
-        <div class="mx-1 mt-[16px] min-w-[0.5em] shrink-0 border-t border-t-ui-white lg:mx-2"></div>
+        <div
+          class="mx-1 mt-[16px] min-w-[0.5em] shrink-0 border-t border-t-ui-white lg:ml-2 lg:mr-3 lg:min-w-[1em]"
+        ></div>
       </template>
       <template #footer>
         <li
