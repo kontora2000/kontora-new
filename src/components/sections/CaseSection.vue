@@ -2,7 +2,7 @@
   <AppSection class="lg:pt-32">
     <AppList with-footer with-header :list="list" :classes="listClasses">
       <template #header>
-        <h1 class="flex-1 whitespace-nowrap text-sm text-ui-white">{{ header }}</h1>
+        <h1 class="whitespace-nowrap text-sm text-ui-white">{{ header }}</h1>
       </template>
       <template #divider>
         <div class="ml-1 flex-1 border-t border-t-ui-white"></div>

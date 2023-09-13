@@ -1,6 +1,8 @@
 <template>
   <div :class="classes.variant">
-    <div class="flex max-h-[24px] shrink-0 items-center xs:mt-1 lg:mr-1 lg:min-w-[110px] lg:max-w-[118px]">
+    <div
+      class="mr-1 flex max-h-[24px] min-w-[118px] max-w-[118px] shrink-0 items-center xs:mt-1 lg:mr-1 lg:min-w-[110px] lg:max-w-[118px]"
+    >
       <slot v-if="withHeader" name="header"></slot> <slot name="divider"> </slot>
     </div>
     <ul>

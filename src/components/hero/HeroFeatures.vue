@@ -6,7 +6,7 @@
       class="first:relative first:before:absolute first:before:content-[url('featureborder2.svg')] lg:first:before:left-[60px] lg:first:before:top-[48px] lg:first:before:scale-[2]"
       :feature="feature"
     />
-    <div class="mt-10 flex max-w-[172px] flex-wrap gap-1 sm:max-w-[400px] lg:mt-0 lg:max-h-[132px] lg:max-w-[291px]">
+    <div class="mt-10 flex max-w-full flex-wrap gap-1 sm:max-w-[400px] lg:mt-0 lg:max-h-[132px] lg:max-w-[291px]">
       <AppChip
         v-for="chip in stackChips"
         :key="chip.id"
