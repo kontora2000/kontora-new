@@ -2,16 +2,14 @@
   <AppSection class="lg:pt-32">
     <AppList with-footer with-header :list="list" :classes="listClasses">
       <template #header>
-        <h1 class="mt-1 flex-1 whitespace-nowrap text-sm text-ui-white">{{ header }}</h1>
+        <h1 class="flex-1 whitespace-nowrap text-sm text-ui-white">{{ header }}</h1>
       </template>
       <template #divider>
-        <div
-          class="mx-1 mt-[16px] min-w-[0.5em] shrink-0 border-t border-t-ui-white lg:ml-2 lg:mr-3 lg:min-w-[1em]"
-        ></div>
+        <div class="ml-1 flex-1 border-t border-t-ui-white"></div>
       </template>
       <template #footer>
         <li
-          class="text-md font-bold tracking-[-1.8px] text-ui-white opacity-[24%] selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
+          class="text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
         >
           {{ footer }}
         </li>

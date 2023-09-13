@@ -1,16 +1,14 @@
 <template>
   <AppList with-footer with-header :list="list" :classes="listClasses">
     <template #header>
-      <h1 class="block shrink-0 text-sm text-ui-white xs:mt-1">{{ header }}</h1>
+      <h1 class="whitespace-nowrap text-sm text-ui-white">{{ header }}</h1>
     </template>
     <template #divider>
-      <div
-        class="mx-1 mt-[10px] min-w-[1em] border-t border-t-ui-white xs:mt-[15px] lg:ml-2 lg:mr-3 lg:min-w-[2.5em]"
-      ></div>
+      <div class="ml-1 flex-1 border-t border-t-ui-white"></div>
     </template>
     <template #footer>
       <li
-        class="text-md font-bold tracking-[-1.8px] text-ui-white opacity-[24%] selection:bg-ui-purple selection:text-ui-black selection:opacity-100 xs:text-xl lg:max-w-[686px] lg:text-3xl"
+        class="text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
       >
         {{ footer }}
       </li>

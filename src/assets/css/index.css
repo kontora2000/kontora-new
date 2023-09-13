@@ -9,6 +9,12 @@ html {
   background-color: #151515;
 }
 
+
+::selection {
+  background-color:'#FF18FC';
+  color:#FFFFFF;
+}
+
 .feature-caption,
 .feature-chip,
 li {
@@ -18,6 +24,7 @@ li {
 
 .footer-link {
   font-family: 'Times New Roman', Times, serif !important;
+  cursor:pointer;
 
 }
 
@@ -27,5 +34,11 @@ li {
   .footer-link {
 
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.32);
+
+  
+}
+
+.footer-link:hover {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 100);
 }}
 

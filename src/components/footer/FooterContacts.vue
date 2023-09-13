@@ -4,7 +4,7 @@
       class="grid grid-cols-2 grid-rows-2 items-end gap-x-12 gap-y-8 lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-20 lg:gap-y-0"
     >
       <div v-for="contact in contacts" :key="contact.id" class="first:row-span-2">
-        <h4 class="mb-2 text-xs text-ui-white opacity-40 xs:text-sm">{{ contact.header }}</h4>
+        <h4 class="mb-2 text-xs text-ui-grek xs:text-sm">{{ contact.header }}</h4>
         <ul>
           <li
             v-for="content in contact.content"

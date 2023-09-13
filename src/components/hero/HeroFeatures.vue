@@ -6,12 +6,11 @@
       class="first:relative first:before:absolute first:before:content-[url('featureborder2.svg')] lg:first:before:left-[60px] lg:first:before:top-[48px] lg:first:before:scale-[2]"
       :feature="feature"
     />
-
-    <div class="mt-10 flex max-w-[172px] flex-wrap gap-2 sm:max-w-[400px] lg:mt-0 lg:max-h-[132px] lg:max-w-[291px]">
+    <div class="mt-10 flex max-w-[172px] flex-wrap gap-1 sm:max-w-[400px] lg:mt-0 lg:max-h-[132px] lg:max-w-[291px]">
       <AppChip
         v-for="chip in stackChips"
         :key="chip.id"
-        class="flex items-center justify-center rounded-[12px] border-2 border-ui-white border-opacity-[32%] px-[10px] py-2 tracking-[-0.48px] text-ui-white lg:max-h-[60px] lg:rounded-[18px] lg:px-6 lg:py-3 lg:text-md"
+        class="flex items-center justify-center rounded-[12px] border-2 border-ui-white border-opacity-[32%] px-[10px] py-2 tracking-[-0.34px] text-ui-white lg:max-h-[40px] lg:px-[10px] lg:py-2 lg:text-sm"
         :chip="chip"
       />
       <AppFeature class="lg:mt-3" :feature="stackFeature" />
@@ -88,7 +87,7 @@ const stackChips: Chips = [
     id: 3,
     double: false,
     title: {
-      top: `Svelte`
+      top: `Astro.js`
     },
     classes: {
       top: 'feature-chip'
@@ -102,7 +101,7 @@ const stackChips: Chips = [
     id: 4,
     double: false,
     title: {
-      top: `nodeJS`
+      top: `React`
     },
     classes: {
       top: 'feature-chip'
@@ -112,11 +111,12 @@ const stackChips: Chips = [
       bottom: null
     }
   },
+
   {
     id: 5,
     double: false,
     title: {
-      top: `TypeScript`
+      top: `Svelte`
     },
     classes: {
       top: 'feature-chip'
@@ -130,21 +130,7 @@ const stackChips: Chips = [
     id: 6,
     double: false,
     title: {
-      top: `PHP`
-    },
-    classes: {
-      top: 'feature-chip'
-    },
-    accent: {
-      top: null,
-      bottom: null
-    }
-  },
-  {
-    id: 6,
-    double: false,
-    title: {
-      top: `WebGL`
+      top: `nodeJS`
     },
     classes: {
       top: 'feature-chip'
@@ -158,7 +144,63 @@ const stackChips: Chips = [
     id: 7,
     double: false,
     title: {
+      top: `TypeScript`
+    },
+    classes: {
+      top: 'feature-chip'
+    },
+    accent: {
+      top: null,
+      bottom: null
+    }
+  },
+  {
+    id: 8,
+    double: false,
+    title: {
+      top: `PHP`
+    },
+    classes: {
+      top: 'feature-chip'
+    },
+    accent: {
+      top: null,
+      bottom: null
+    }
+  },
+  {
+    id: 9,
+    double: false,
+    title: {
+      top: `WebGL`
+    },
+    classes: {
+      top: 'feature-chip'
+    },
+    accent: {
+      top: null,
+      bottom: null
+    }
+  },
+  {
+    id: 10,
+    double: false,
+    title: {
       top: `three.js`
+    },
+    classes: {
+      top: 'feature-chip'
+    },
+    accent: {
+      top: null,
+      bottom: null
+    }
+  },
+  {
+    id: 11,
+    double: false,
+    title: {
+      top: `3D`
     },
     classes: {
       top: 'feature-chip'

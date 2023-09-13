@@ -19,7 +19,9 @@ export default {
       'ui-dark': '#353535',
       'ui-green': '#77FF00',
       'ui-blue': '#4639FE',
-      'ui-white': '#FFFFFF'
+      'ui-white': '#FFFFFF',
+      'ui-pale': '#FFFFFF3D',
+      'ui-grek': '#FFFFFF66'
     },
     fontSize: {
       xxs: ['12px', '100%'],
