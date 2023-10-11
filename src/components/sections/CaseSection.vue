@@ -1,6 +1,6 @@
 <template>
   <AppSection class="lg:pt-32">
-    <AppList with-footer with-header :list="list" :classes="listClasses">
+    <AppList with-footer with-header :list="list" :classes="listClasses" class="max-w-[90%]">
       <template #header>
         <h1 class="whitespace-nowrap text-sm text-ui-white">{{ header }}</h1>
       </template>
@@ -19,6 +19,7 @@
 </template>
 
 <script setup lang="ts">
+import { nbhyph } from '../../constants/common';
 import type { List } from 'types/List';
 
 const header = 'Worked with';
@@ -42,7 +43,7 @@ const list: List = [
   },
   {
     id: 4,
-    title: 'IP-Note.pro',
+    title: `IP${nbhyph}Note.pro`,
     isNew: true
   },
   {
@@ -70,7 +71,7 @@ const list: List = [
 const listClasses = {
   variant: 'flex lg:mt-10 ',
   itemClass:
-    'text-ui-white text-md xs:text-xl tracking-[-0.96px] lg:tracking-[-1.8px] selection:text-ui-black selection:bg-ui-purple lg:text-3xl  lg:last:whitespace-nowrap '
+    'text-ui-white text-md  xs:text-xl tracking-[-0.96px] lg:tracking-[-1.8px] selection:text-ui-black selection:bg-ui-purple lg:text-3xl  lg:last:whitespace-nowrap '
 };
 </script>
 

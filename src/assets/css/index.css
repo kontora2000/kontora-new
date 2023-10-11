@@ -4,15 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
   font-family: 'Times New Roman', Times, serif;
   background-color: #151515;
 }
 
-
 ::selection {
-  background-color:'#FF18FC';
-  color:#FFFFFF;
+  background-color: '#FF18FC';
+  color: #ffffff;
 }
 
 .feature-caption,
@@ -21,24 +21,13 @@ li {
   font-family: Inter, sans-serif !important;
 }
 
-
 .footer-link {
   font-family: 'Times New Roman', Times, serif !important;
-  cursor:pointer;
-
-}
-
-
-@media (min-width: 1024px) { 
-  
-  .footer-link {
-
+  cursor: pointer;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.32);
-
-  
+  max-width:fit-content;
 }
 
 .footer-link:hover {
   border-bottom: 0.5px solid rgba(255, 255, 255, 100);
-}}
-
+}
