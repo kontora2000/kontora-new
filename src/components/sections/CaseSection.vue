@@ -71,7 +71,7 @@ const list: List = [
 const listClasses = {
   variant: 'flex lg:mt-10 ',
   itemClass:
-    'text-ui-white text-md  xs:text-xl tracking-[-0.96px] lg:tracking-[-1.8px] selection:text-ui-black selection:bg-ui-purple lg:text-3xl  lg:last:whitespace-nowrap '
+    'text-ui-white text-md  xs:text-xl tracking-[-0.96px] lg:tracking-[-1.8px] selection:text-ui-black selection:bg-ui-purple lg:text-2xl xl:text-3xl  lg:last:whitespace-nowrap '
 };
 </script>
 

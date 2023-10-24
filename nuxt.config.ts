@@ -2,6 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
+  css: ['animate.css/animate.min.css'],
+
   devServer: {
     port: 3003
   },
@@ -28,8 +30,6 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-
-  css: ['~/assets/css/index.css'],
 
   modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', 'nuxt-icon'],
 
