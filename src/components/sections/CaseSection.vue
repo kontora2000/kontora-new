@@ -1,17 +1,31 @@
 <template>
   <AppSection class="lg:pt-32">
-    <AppList with-footer with-header :list="list" :classes="listClasses" class="max-w-[90%]">
+    <AppList
+      v-observe-visibility="isInView"
+      with-footer
+      with-header
+      :list="list"
+      :classes="listClasses"
+      class="max-w-[90%] overflow-hidden"
+    >
       <template #header>
-        <h1 class="whitespace-nowrap text-sm text-ui-white">{{ header }}</h1>
+        <h1 class="cases-list-header _whitespace-nowrap text-sm text-ui-white">
+          {{ header }}
+        </h1>
       </template>
       <template #divider>
-        <div class="ml-1 flex-1 border-t border-t-ui-white"></div>
+        <div class="cases-list-header ml-1 flex-1 border-t border-t-ui-white"></div>
       </template>
       <template #footer>
         <li
-          class="text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
+          class="cases-list-item list-footer-item cases-list-footer-item relative z-10 text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
         >
-          {{ footer }}
+          {{ footer.firstline }}
+        </li>
+        <li
+          class="cases-list-item list-footer-item cases-list-footer-item relative z-10 text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
+        >
+          {{ footer.secondline }}
         </li>
       </template>
     </AppList>
@@ -20,10 +34,14 @@
 
 <script setup lang="ts">
 import { nbhyph } from '../../constants/common';
+import { isInView } from '../../composables/isInView';
 import type { List } from 'types/List';
 
 const header = 'Worked with';
-const footer = 'and other lesser-known companies & startups';
+const footer = {
+  firstline: 'and other lesser-known',
+  secondline: 'companies & startups'
+};
 
 const list: List = [
   {
@@ -53,7 +71,7 @@ const list: List = [
   },
   {
     id: 6,
-    title: 'OTEKO (the largest investor in the port infrastructure of Southern Russia)',
+    title: 'OTEKO',
     isNew: false
   },
   {
@@ -63,7 +81,7 @@ const list: List = [
   },
   {
     id: 8,
-    title: 'AKBshka.ru (car battery delivery)',
+    title: 'AKBshka.ru',
     isNew: false
   }
 ];
@@ -71,8 +89,6 @@ const list: List = [
 const listClasses = {
   variant: 'flex lg:mt-10 ',
   itemClass:
-    'text-ui-white text-md  xs:text-xl tracking-[-0.96px] lg:tracking-[-1.8px] selection:text-ui-black selection:bg-ui-purple lg:text-2xl xl:text-3xl  lg:last:whitespace-nowrap '
+    'cases-list-item overflow-hidden relative text-ui-white text-md  xs:text-xl tracking-[-0.96px] lg:tracking-[-1.8px] selection:text-ui-black selection:bg-ui-purple lg:text-2xl xl:text-3xl  lg:last:whitespace-nowrap '
 };
 </script>
-
-<style scoped></style>

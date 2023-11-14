@@ -8,6 +8,8 @@ export default defineNuxtConfig({
     port: 3003
   },
 
+  plugins: ['~/plugins/vue-observe-visibility'],
+
   spaLoadingTemplate: false,
 
   tailwindcss: {
@@ -89,6 +91,6 @@ export default defineNuxtConfig({
     },
 
     baseURL: '/kontora-new/',
-    buildAssetsDir: 'src' //
+    buildAssetsDir: 'src'
   }
 });

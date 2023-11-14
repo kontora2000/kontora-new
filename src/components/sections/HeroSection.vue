@@ -1,3 +1,4 @@
+<!-- eslint-disable tailwindcss/no-custom-classname -->
 <template>
   <AppSection class="pb-20">
     <div class="lg:flex lg:pb-[180px]">
@@ -5,7 +6,11 @@
         <div
           class="baselg:order-2 lf:left-[-10px] mb-9 ml-[100px] mt-8 flex max-w-[277px] flex-1 flex-col self-end xs:relative xs:left-[50px] xs:top-0 xs:ml-5 mb:left-0 mb:ml-auto lg:left-[-122px] lg:top-[-1px] lg:mt-[50px] lg:max-w-none lg:shrink-0 xl:left-[-207px] base:left-[-180px]"
         >
-          <AppChip class="flex rotate-[8deg] flex-col items-center justify-center self-end" :chip="chipTop" icon-bottom>
+          <AppChip
+            class="chip-animated-top animate__animated animate__fadeIn flex rotate-[8deg] flex-col items-center justify-center self-end"
+            :chip="chipTop"
+            icon-bottom
+          >
             <template #title>
               Team of&nbsp;<span
                 class="feature-caption font-bold tracking-[-0.34px] xs:text-[14px] sm:text-mdx lg:text-md"
@@ -19,7 +24,11 @@
               ></AppIcon>
             </template>
           </AppChip>
-          <AppChip icon-top class="relative rotate-[-2deg] self-center lg:self-end" :chip="chipBottom">
+          <AppChip
+            icon-top
+            class="chip-animated-bottom animate__animated animate__fadeIn relative rotate-[-2deg] self-center lg:self-end"
+            :chip="chipBottom"
+          >
             <template #iconTop>
               <AppIcon
                 name="worldwide"

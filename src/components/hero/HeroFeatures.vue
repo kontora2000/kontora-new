@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hero animate__animated animate__fadeInUp mt-[50px] flex flex-wrap mb:justify-normal mb:gap-8 lg:mt-0 xl:justify-between"
+    class="section-animated mt-[50px] flex flex-wrap opacity-0 mb:justify-normal mb:gap-8 lg:mt-0 xl:justify-between"
   >
     <AppFeature v-for="feature in features" :key="feature.caption" :feature="feature" />
     <div class="mt-10 flex max-w-[90%] flex-wrap gap-1 sm:max-w-[400px] lg:mt-0 lg:max-h-[132px] lg:max-w-[291px]">
