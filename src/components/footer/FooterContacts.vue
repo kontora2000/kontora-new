@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-between">
+  <div v-observe-visibility="isInView" class="flex items-start justify-between">
     <div
-      class="grid grid-cols-2 grid-rows-2 items-start gap-x-3 gap-y-8 lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-20 lg:gap-y-0"
+      class="footer-contacts grid grid-cols-2 grid-rows-2 items-start gap-x-3 gap-y-8 lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-20 lg:gap-y-0"
     >
-      <div v-for="contact in contacts" :key="contact.id" class="footer-contacts first:row-span-2">
+      <div v-for="contact in contacts" :key="contact.id" class="first:row-span-2">
         <h4 class="mb-2 text-xs text-ui-grek xs:text-sm">{{ contact.header }}</h4>
         <ul>
           <li
@@ -16,7 +16,7 @@
         </ul>
       </div>
     </div>
-    <div class="self-start text-xs text-ui-grek xs:text-sm">©&thinsp;{{ year }}</div>
+    <div class="footer-contacts self-start text-xs text-ui-grek xs:text-sm">©&thinsp;{{ year }}</div>
   </div>
 </template>
 

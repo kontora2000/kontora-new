@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { scrollToTop } from '../composables/scrollToTop';
+import { scrollToTop } from '@/utils/dom';
 </script>
 
 <style scoped></style>

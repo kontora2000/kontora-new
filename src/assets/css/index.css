@@ -180,6 +180,6 @@ html {
 
 .is-visible .footer-contacts {
   animation:
-    reveal-up 0.34s cubic-bezier(0.25, 0.1, 0.25, 1) 0.52s both,
-    fade 0.12s ease-out 1.32s both;
+    reveal-up 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0.42s both,
+    fade 0.12s ease-out 0.62s both;
 }

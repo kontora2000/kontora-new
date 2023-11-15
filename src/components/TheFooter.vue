@@ -1,7 +1,7 @@
 <template>
   <footer class="mb-8 mt-[80px] selection:bg-ui-purple selection:text-ui-black">
-    <AppContainer variant="footer">
-      <FooterContacts v-observe-visibility="isInView" :contacts="contacts" />
+    <AppContainer variant="footer" class="overflow-hidden">
+      <FooterContacts :contacts="contacts" />
     </AppContainer>
   </footer>
 </template>

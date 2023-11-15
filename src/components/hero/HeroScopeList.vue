@@ -1,5 +1,5 @@
 <template>
-  <AppList with-footer with-header :list="list" :classes="listClasses" class="max-w-[90%] overflow-hidden">
+  <AppList :list="list" :classes="listClasses" class="max-w-[90%] overflow-hidden">
     <template #header>
       <h1 class="animate__animated animate__fadeIn list-header whitespace-nowrap text-sm text-ui-white">
         {{ header }}
