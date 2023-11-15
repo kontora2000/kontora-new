@@ -1,15 +1,8 @@
 <template>
   <AppSection class="lg:pt-32">
-    <AppList
-      v-observe-visibility="isInView"
-      with-footer
-      with-header
-      :list="list"
-      :classes="listClasses"
-      class="max-w-[90%] overflow-hidden"
-    >
+    <AppList v-observe-visibility="isInView" :list="list" :classes="listClasses" class="max-w-[90%] overflow-hidden">
       <template #header>
-        <h1 class="cases-list-header _whitespace-nowrap text-sm text-ui-white">
+        <h1 class="cases-list-header whitespace-nowrap text-sm text-ui-white">
           {{ header }}
         </h1>
       </template>
@@ -20,12 +13,12 @@
         <li
           class="cases-list-item list-footer-item cases-list-footer-item relative z-10 text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
         >
-          {{ footer.firstline }}
+          {{ footer.firstLine }}
         </li>
         <li
           class="cases-list-item list-footer-item cases-list-footer-item relative z-10 text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
         >
-          {{ footer.secondline }}
+          {{ footer.secondLine }}
         </li>
       </template>
     </AppList>
@@ -33,14 +26,13 @@
 </template>
 
 <script setup lang="ts">
-import { nbhyph } from '../../constants/common';
-import { isInView } from '../../composables/isInView';
+import { nbhyph } from '@/constants/common';
 import type { List } from 'types/List';
 
 const header = 'Worked with';
 const footer = {
-  firstline: 'and other lesser-known',
-  secondline: 'companies & startups'
+  firstLine: 'and other lesser-known',
+  secondLine: 'companies & startups'
 };
 
 const list: List = [
