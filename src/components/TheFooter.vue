@@ -1,7 +1,7 @@
 <template>
-  <footer class="mb-8">
+  <footer class="mb-8 mt-[80px] selection:bg-ui-purple selection:text-ui-black">
     <AppContainer variant="footer">
-      <FooterContacts :contacts="contacts" />
+      <FooterContacts v-observe-visibility="isInView" :contacts="contacts" />
     </AppContainer>
   </footer>
 </template>
@@ -19,22 +19,22 @@ const contacts: Contacts = [
       {
         id: '1',
         title: 'Instagram',
-        link: 'https://www.instagram.com/'
+        link: 'https://instagram.com/kontoragram'
       },
       {
         id: '2',
         title: 'Twitter',
-        link: 'https://www.twitter.com/'
+        link: ' https://twitter.com/kontora_dev'
       },
       {
         id: '3',
         title: 'LinkedIn',
-        link: 'https://www.linkedin.com/'
+        link: 'https://www.linkedin.com/company/kontora-dev'
       },
       {
         id: '4',
         title: 'Telegram',
-        link: 'https://www.telegram.com/'
+        link: 'https://t.me/kontoragram'
       }
     ]
   },

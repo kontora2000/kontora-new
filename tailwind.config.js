@@ -19,13 +19,18 @@ export default {
       'ui-dark': '#353535',
       'ui-green': '#77FF00',
       'ui-blue': '#4639FE',
-      'ui-white': '#FFFFFF'
+      'ui-white': '#FFFFFF',
+      'ui-pale': '#FFFFFF3D',
+      'ui-grek': '#FFFFFF66'
     },
     fontSize: {
+      xxs: ['12px', '100%'],
       xs: ['14px', '133%'],
+      smx: ['16px', '150%'],
       sm: ['18px', '133%'],
       base: ['20px', '24px'],
-      md: ['24px', '36px'],
+      mdx: ['22px', '133%'],
+      md: ['24px', '24px'],
       lg: ['27px', '27px'],
       xl: ['32px', '32px'],
       '2xl': ['48px', '48px'],
@@ -35,10 +40,12 @@ export default {
     },
     screens: {
       xs: '360px',
+      mb: '480px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      base: '1440px',
       '2xl': '1536px'
     }
   }
