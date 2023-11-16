@@ -47,6 +47,12 @@ export default {
       xl: '1280px',
       base: '1440px',
       '2xl': '1536px'
+    },
+    letterSpacing: {
+      tightest: '-1.8px',
+      tighter: '-1.44px',
+      tight: '-0.96px',
+      normal: '-0.34px'
     }
   }
 };

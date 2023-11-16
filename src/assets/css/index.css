@@ -14,9 +14,8 @@ html {
   color: #ffffff;
 }
 
-.feature-caption,
-.feature-chip,
-.steps-desc li {
+
+.inter, li {
   font-family: Inter, sans-serif !important;
 }
 
@@ -108,7 +107,7 @@ html {
 
 .list-footer-item,
 .list-footer-item:before {
-  animation-delay: 1.22s !important;
+  animation-delay: 1.12s !important;
 }
 
 .list-footer-item:nth-child(5),
@@ -146,40 +145,7 @@ html {
   animation-delay: 2.04s !important;
 }
 
-.is-visible .chip-animated-new {
-  animation: fade 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0.4s both;
-}
 
-.is-visible .cases-list-header {
-  animation: fade 0.12s ease-out 0.3s both;
-}
 
-.is-visible .cases-list-item {
-  animation: reveal-up 0.32s cubic-bezier(0.25, 0.1, 0.25, 1) 0.42s both;
-}
 
-.is-visible .cases-list-item:before {
-  animation: reveal-up-reverse 0.32s ease 0.42s both;
-}
 
-.is-visible .cases-list-footer-item {
-  animation-delay:0.62s !important;
-}
-
-.is-visible .cases-list-footer-item:before {
-  animation-delay:0.62s !important;
-}
-
-.is-visible .cases-list-footer-item:nth-child(10){
-  animation-delay:0.66s !important;
-}
-
-.is-visible .cases-list-footer-item:nth-child(10):before {
-  animation-delay:0.66s !important;
-}
-
-.is-visible .footer-contacts {
-  animation:
-    reveal-up 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0.42s both,
-    fade 0.12s ease-out 0.62s both;
-}

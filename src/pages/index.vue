@@ -2,6 +2,7 @@
   <div>
     <SectionsHeroSection />
     <SectionsCaseSection />
+    <SectionsLetsGo />
   </div>
 </template>
 
