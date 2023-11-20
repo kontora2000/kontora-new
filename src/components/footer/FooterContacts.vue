@@ -1,3 +1,4 @@
+<!-- eslint-disable tailwindcss/no-custom-classname -->
 <template>
   <div v-observe-visibility="isInView" class="flex items-start justify-between">
     <div
@@ -29,3 +30,11 @@ defineProps<{
   contacts: Contacts;
 }>();
 </script>
+
+<style scoped>
+.is-visible .footer-contacts {
+  animation:
+    reveal-up 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0.32s both,
+    fade 0.12s ease-out 0.62s both;
+}
+</style>

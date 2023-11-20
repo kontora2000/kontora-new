@@ -72,6 +72,27 @@
       stroke-linejoin="round"
     />
   </svg>
+  <svg
+    v-else-if="name === 'arrow'"
+    width="49"
+    height="49"
+    viewBox="0 0 49 49"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g clip-path="url(#clip0_4549_335)">
+      <path
+        d="M0.5 25.0495H46.6538M46.6538 25.0495L24.0385 2.43408M46.6538 25.0495L24.0385 47.6649"
+        stroke="white"
+        stroke-width="3.69231"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_4549_335">
+        <rect width="48" height="48" fill="white" transform="translate(0.5 0.587891)" />
+      </clipPath>
+    </defs>
+  </svg>
 </template>
 
 <script setup lang="ts">

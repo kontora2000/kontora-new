@@ -12,8 +12,7 @@
             icon-bottom
           >
             <template #title>
-              Team of&nbsp;<span
-                class="feature-caption font-bold tracking-[-0.34px] xs:text-[14px] sm:text-mdx lg:text-md"
+              Team of&nbsp;<span class="inter font-bold tracking-normal xs:text-[14px] sm:text-mdx lg:text-md"
                 >developers</span
               >&nbsp;and designers.
             </template>

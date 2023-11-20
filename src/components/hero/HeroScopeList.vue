@@ -10,17 +10,17 @@
     </template>
     <template #footer>
       <li
-        class="list-footer-item list-item-animated text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:text-2xl xl:text-3xl"
+        class="list-footer-item list-item-animated text-md font-bold tracking-tightest text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:text-2xl xl:text-3xl"
       >
         + We can provide expert
       </li>
       <li
-        class="list-footer-item list-item-animated text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:pb-1 lg:text-2xl xl:text-3xl"
+        class="list-footer-item list-item-animated text-md font-bold tracking-tightest text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:pb-1 lg:text-2xl xl:text-3xl"
       >
         review and help you
       </li>
       <li
-        class="list-footer-item list-item-animated text-md font-bold tracking-[-1.8px] text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:pb-1 lg:text-2xl xl:text-3xl"
+        class="list-footer-item list-item-animated text-md font-bold tracking-tightest text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:pb-1 lg:text-2xl xl:text-3xl"
       >
         acceptance of projects
       </li>
@@ -55,7 +55,7 @@ const list: List = [
 const listClasses = {
   variant: 'flex lg:mt-20 ',
   itemClass:
-    'hero-list [&:nth-child(3)]:pb-1 lg:[&:nth-child(3)]:pb-[6px] list-item-animated  text-ui-white overflow-hidden text-md xs:text-xl tracking-[-0.96px] lg:tracking-[-1.8px] lg:text-2xl xl:text-3xl xl:whitespace-nowrap selection:text-ui-black  selection:bg-ui-purple '
+    'hero-list [&:nth-child(3)]:pb-1 lg:[&:nth-child(3)]:pb-[6px] list-item-animated  text-ui-white overflow-hidden text-md xs:text-xl tracking-tight lg:tracking-tightest lg:text-2xl xl:text-3xl xl:whitespace-nowrap selection:text-ui-black  selection:bg-ui-purple '
 };
 </script>
 
