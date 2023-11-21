@@ -1,6 +1,7 @@
 export interface ListItem {
   id: string | number;
-  title: string;
+  title: string | null;
+  accent: string;
   isNew: boolean;
 }
 

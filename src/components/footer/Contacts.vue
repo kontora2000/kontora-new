@@ -1,8 +1,7 @@
-<!-- eslint-disable tailwindcss/no-custom-classname -->
 <template>
   <div v-observe-visibility="isInView" class="flex items-start justify-between">
     <div
-      class="footer-contacts grid grid-cols-2 grid-rows-2 items-start gap-x-3 gap-y-8 lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-20 lg:gap-y-0"
+      class="footer-contacts lg:grid-cols-3 grid grid-cols-2 grid-rows-2 items-start gap-x-3 gap-y-8 lg:grid-rows-1 lg:gap-x-20 lg:gap-y-0"
     >
       <div v-for="contact in contacts" :key="contact.id" class="first:row-span-2">
         <h4 class="mb-2 text-xs text-ui-grek xs:text-sm">{{ contact.header }}</h4>
@@ -10,9 +9,9 @@
           <li
             v-for="content in contact.content"
             :key="content.id"
-            class="footer-link mb-2 max-w-[73px] text-xs text-ui-white last:mb-0 xs:text-sm lg:max-w-fit"
+            class="mb-2 max-w-fit cursor-pointer border-b text-xs text-ui-white transition-colors last:mb-0 xs:text-sm md:border-b-ui-grek-2 md:hover:border-b-ui-grek-hover lg:max-w-fit"
           >
-            <NuxtLink :to="content.link">{{ content.title }}</NuxtLink>
+            <a :href="content.link">{{ content.title }}</a>
           </li>
         </ul>
       </div>
