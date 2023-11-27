@@ -13,6 +13,16 @@ export default {
     extend: {
       content: {}
     },
+    screens: {
+      xs: '360px',
+      mb: '480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      base: '1440px',
+      '2xl': '1536px'
+    },
     colors: {
       'ui-purple': '#FF18FC',
       'ui-black': '#151515',
@@ -21,7 +31,9 @@ export default {
       'ui-blue': '#4639FE',
       'ui-white': '#FFFFFF',
       'ui-pale': '#FFFFFF3D',
-      'ui-grek': '#FFFFFF66'
+      'ui-grek': '#FFFFFF66',
+      'ui-grek-2': 'rgba(255, 255, 255, 0.32)',
+      'ui-grek-hover': 'rgba(255, 255, 255, 100)'
     },
     fontSize: {
       xxs: ['12px', '100%'],
@@ -38,21 +50,21 @@ export default {
       '4xl': ['100px', '61px'],
       '5xl': ['200px', '132px']
     },
-    screens: {
-      xs: '360px',
-      mb: '480px',
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      base: '1440px',
-      '2xl': '1536px'
+    fontFamily: {
+      inter: 'Inter, sans-serif ',
+      times: `'Times New Roman', Times, serif'`
     },
+
     letterSpacing: {
       tightest: '-1.8px',
       tighter: '-1.44px',
       tight: '-0.96px',
       normal: '-0.34px'
+    },
+
+    gridTemplateColumns: {
+      2: ' repeat(2, minmax(0, 1fr));',
+      steps: '1fr 8px 1fr'
     }
   }
 };

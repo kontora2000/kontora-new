@@ -1,14 +1,16 @@
 <template>
-  <div :class="classes.variant">
+  <div :class="classes.wrapper">
     <div
+      v-if="$slots.header"
       class="mr-1 flex max-h-[24px] min-w-[118px] max-w-[118px] shrink-0 items-center xs:mt-1 lg:mr-1 lg:min-w-[110px] lg:max-w-[118px]"
     >
       <slot name="header"></slot> <slot name="divider"> </slot>
     </div>
-    <ul>
-      <li v-for="item in list" :key="item.id" :class="classes.itemClass" class="flex items-center">
+    <ul :class="classes.list">
+      <li v-for="item in list" :key="item.id" :class="classes.item" class="flex items-center">
         <slot
-          ><strong>{{ item.title }}</strong></slot
+          ><span :class="classes.title"> {{ item.title }}</span
+          ><strong :class="classes.accent">{{ item.accent }}</strong></slot
         >
         <slot v-if="item.isNew" name="new">
           <div
@@ -30,8 +32,11 @@ import type { List } from 'types/List';
 defineProps<{
   list: List;
   classes: {
-    variant: string;
-    itemClass: string;
+    wrapper: string;
+    list: string;
+    item: string;
+    title: string;
+    accent: string;
   };
 }>();
 </script>

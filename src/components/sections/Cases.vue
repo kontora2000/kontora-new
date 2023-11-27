@@ -1,7 +1,6 @@
-<!-- eslint-disable tailwindcss/no-custom-classname -->
 <template>
   <AppSection class="lg:pt-32">
-    <AppList v-observe-visibility="isInView" :list="list" :classes="listClasses" class="max-w-[90%] overflow-hidden">
+    <AppList v-observe-visibility="isInView" :list="list" :classes="listClasses" class="max-w-[90%] lg:overflow-hidden">
       <template #header>
         <h1 class="cases-list-header whitespace-nowrap text-sm text-ui-white">
           {{ header }}
@@ -12,12 +11,12 @@
       </template>
       <template #footer>
         <li
-          class="cases-list-item list-footer-item cases-list-footer-item relative z-10 text-md font-bold tracking-tightest text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
+          class="cases-list-item list-footer-item cases-list-footer-item relative z-10 font-inter text-md font-bold tracking-tightest text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
         >
           {{ footer.firstLine }}
         </li>
         <li
-          class="cases-list-item list-footer-item cases-list-footer-item relative z-10 text-md font-bold tracking-tightest text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
+          class="cases-list-item list-footer-item cases-list-footer-item relative z-10 font-inter text-md font-bold tracking-tightest text-ui-pale selection:bg-ui-purple selection:text-ui-black xs:text-xl lg:max-w-[686px] lg:text-3xl"
         >
           {{ footer.secondLine }}
         </li>
@@ -39,50 +38,60 @@ const footer = {
 const list: List = [
   {
     id: 1,
-    title: 'Renaissance Insurance',
+    accent: 'Renaissance Insurance',
+    title: null,
     isNew: false
   },
   {
     id: 2,
-    title: 'RBC.ru',
+    accent: 'RBC.ru',
+    title: null,
     isNew: false
   },
   {
     id: 3,
-    title: 'FinFort',
+    accent: 'FinFort',
+    title: null,
     isNew: true
   },
   {
     id: 4,
-    title: `IP${nbhyph}Note.pro`,
+    accent: `IP${nbhyph}Note.pro`,
+    title: null,
     isNew: true
   },
   {
     id: 5,
-    title: 'Zvonok.com',
+    accent: 'Zvonok.com',
+    title: null,
     isNew: false
   },
   {
     id: 6,
-    title: 'OTEKO',
+    accent: 'OTEKO',
+    title: null,
     isNew: false
   },
   {
     id: 7,
-    title: 'Delofon.ru',
+    accent: 'Delofon.ru',
+    title: null,
     isNew: false
   },
   {
     id: 8,
-    title: 'AKBshka.ru',
+    accent: 'AKBshka.ru',
+    title: null,
     isNew: false
   }
 ];
 
 const listClasses = {
-  variant: 'flex lg:mt-10 ',
-  itemClass:
-    'cases-list-item overflow-hidden relative text-ui-white text-md  xs:text-xl tracking-tight lg:tracking-tightest selection:text-ui-black selection:bg-ui-purple lg:text-2xl xl:text-3xl  lg:last:whitespace-nowrap '
+  wrapper: 'flex lg:mt-10 ',
+  title: '',
+  accent: '',
+  list: '',
+  item: 'cases-list-item font-inter lg:overflow-hidden relative text-ui-white text-md  xs:text-xl tracking-tight lg:tracking-tightest selection:text-ui-black selection:bg-ui-purple lg:text-2xl xl:text-3xl  lg:last:whitespace-nowrap '
 };
 </script>
 <style>

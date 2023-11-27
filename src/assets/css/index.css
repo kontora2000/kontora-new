@@ -14,22 +14,6 @@ html {
   color: #ffffff;
 }
 
-
-.inter, li {
-  font-family: Inter, sans-serif !important;
-}
-
-.footer-link {
-  font-family: 'Times New Roman', Times, serif !important;
-  cursor: pointer;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.32);
-  max-width: fit-content;
-}
-
-.footer-link:hover {
-  border-bottom: 0.5px solid rgba(255, 255, 255, 100);
-}
-
 /*animations*/
 @keyframes reveal-up {
   0% {
@@ -144,8 +128,3 @@ html {
 .chip-animated-bottom {
   animation-delay: 2.04s !important;
 }
-
-
-
-
-

@@ -1,5 +1,5 @@
 <template>
-  <footer class="mb-8 mt-[80px] selection:bg-ui-purple selection:text-ui-black">
+  <footer class="mb-8 mt-[80px] pt-[80px] selection:bg-ui-purple selection:text-ui-black">
     <AppContainer variant="footer" class="overflow-hidden">
       <FooterContacts :contacts="contacts" />
     </AppContainer>

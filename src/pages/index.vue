@@ -1,7 +1,8 @@
 <template>
   <div>
-    <SectionsHeroSection />
-    <SectionsCaseSection />
+    <SectionsHero />
+    <SectionsCases />
+    <SectionsSteps />
     <SectionsLetsGo />
   </div>
 </template>

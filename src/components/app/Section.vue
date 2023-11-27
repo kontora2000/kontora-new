@@ -11,7 +11,5 @@ const props = withDefaults(defineProps<{ fullscreen: boolean }>(), {
   fullscreen: false
 });
 
-const sectionVariant = computed(() => {
-  return props.fullscreen ? 'fullscreen' : 'section';
-});
+const sectionVariant = computed(() => (props.fullscreen ? 'fullscreen' : 'section'));
 </script>

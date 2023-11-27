@@ -27,7 +27,7 @@ const features: Features = [
     classes: {
       header: 'text-ui-white text-4xl italic lg:text-4xl xl:text-5xl ',
       caption:
-        'inter text-ui-white  text-base xs:text-md max-w-[153px] mr-[31px] lg:text-2xl  lg:max-w-[305px] font-bold tracking-tighter mt-3'
+        'font-inter text-ui-white  text-base xs:text-md max-w-[153px] mr-[31px] lg:text-2xl  lg:max-w-[305px] font-bold tracking-tighter mt-3'
     }
   },
   {
@@ -36,7 +36,7 @@ const features: Features = [
     classes: {
       header: 'text-ui-white text-4xl  italic lg:text-4xl xl:text-5xl',
       caption:
-        'inter whitespace-pre text-ui-white text-base xs:text-md   max-w-[165px] font-bold tracking-tighter mt-3 lg:text-2xl'
+        'font-inter whitespace-pre text-ui-white text-base xs:text-md   max-w-[165px] font-bold tracking-tighter mt-3 lg:text-2xl'
     }
   }
 ];
@@ -46,7 +46,7 @@ const stackFeature: Feature = {
   caption: 'Our stack',
   classes: {
     header: '',
-    caption: 'inter  text-ui-white text-base xs:text-md lg:text-2xl max-w-[305px] font-bold tracking-tighter'
+    caption: 'font-inter  text-ui-white text-base xs:text-md lg:text-2xl max-w-[305px] font-bold tracking-tighter'
   }
 };
 
@@ -58,7 +58,7 @@ const stackChips: Chips = [
       top: `Vue`
     },
     classes: {
-      top: 'inter'
+      top: 'font-font-inter'
     },
     accent: {
       top: null,
@@ -72,7 +72,7 @@ const stackChips: Chips = [
       top: `Nuxt`
     },
     classes: {
-      top: 'inter'
+      top: 'font-font-inter'
     },
     accent: {
       top: null,
@@ -86,7 +86,7 @@ const stackChips: Chips = [
       top: `Astro.js`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
@@ -100,7 +100,7 @@ const stackChips: Chips = [
       top: `React`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
@@ -115,7 +115,7 @@ const stackChips: Chips = [
       top: `Svelte`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
@@ -129,7 +129,7 @@ const stackChips: Chips = [
       top: `nodeJS`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
@@ -143,7 +143,7 @@ const stackChips: Chips = [
       top: `TypeScript`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
@@ -157,7 +157,7 @@ const stackChips: Chips = [
       top: `PHP`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
@@ -171,7 +171,7 @@ const stackChips: Chips = [
       top: `WebGL`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
@@ -185,7 +185,7 @@ const stackChips: Chips = [
       top: `three.js`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
@@ -199,7 +199,7 @@ const stackChips: Chips = [
       top: `3D`
     },
     classes: {
-      top: 'inter'
+      top: 'font-inter'
     },
     accent: {
       top: null,
